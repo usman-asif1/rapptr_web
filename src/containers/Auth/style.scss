@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Avenir Next';
+}
+
+.container-home {
+  background-image: url(./../../assets/gpc_loginBg@2x.png);
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+
+  .logo-img {
+    position: absolute;
+    top: 32px;
+    left: 80px;
+    width: 260px;
+    padding: 30px;
+  }
+
+  .home-outer {
+    position: absolute;
+    top: 225px;
+    text-align: center;
+    width: 100%;
+
+    .home-inner {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      width: 372px;
+      margin: auto;
+
+      .login-buttons {
+        display: flex;
+        margin-bottom: 32px;
+
+        h3 {
+          font-weight: bold;
+          font-size: 24px;
+          color: white;
+          cursor: pointer;
+          opacity: 60%;
+        }
+
+        .login-signup {
+          margin-left: 5px;
+        }
+
+        .login-link {
+          margin-left: 21px;
+        }
+
+        .active-link {
+          color: white;
+          opacity: 100%;
+          text-decoration: underline;
+        }
+      }
+
+      .input-tags {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 32px;
+      }
+
+      .login-input {
+        text-transform: uppercase;
+        color: white;
+        background-color: #2fcbfc;
+        height: 49px;
+        width: 372px;
+        border: none;
+        font-weight: bold;
+        letter-spacing: 3px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container-home {
+    .logo-img {
+      left: 20px;
+      width: 200px;
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .container-home .home-outer .home-inner {
+    width: 350px;
+    .login-input {
+      width: 200px;
+    }
+  }
+}

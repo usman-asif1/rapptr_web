@@ -1,0 +1,47 @@
+.tag-main {
+  display: flex;
+  position: relative;
+
+  .tag-img {
+    width: 22px;
+    padding-top: 12px;
+    padding-left: 10px;
+    position: absolute;
+    left: 5px;
+  }
+
+  .tag-inner {
+    margin-bottom: 12px;
+    width: 360px;
+    border-radius: 0px;
+
+    .tag-input {
+      line-height: 46px;
+      width: 314px;
+      padding-left: 50px;
+      border-radius: 0px;
+      border: none;
+      color: white;
+      background-color: rgba(256, 256, 256, 0.3);
+      text-decoration: none;
+    }
+
+    .tag-input::placeholder {
+      color: white;
+      opacity: 50%;
+    }
+
+    input:focus {
+      outline: none;
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .tag-main .tag-inner {
+    width: 300px;
+    .tag-input {
+      width: 240px;
+    }
+  }
+}
